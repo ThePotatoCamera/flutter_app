@@ -26,4 +26,4 @@ jobs:
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk
-    
+    - uses: ShowMeThe/github_action_release@v0.01
