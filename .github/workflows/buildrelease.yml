@@ -26,4 +26,8 @@ jobs:
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk
-    - uses: ShowMeThe/github_action_release@v0.01
+    - uses: johnwbyrd/update-release@v1.0.0
+      with:
+        token: \$\{\{ secrets.GITHUB_TOKEN \}\}
+        files: build/app/outputs/flutter-apk/app-release.apk
+        prerelease: false
