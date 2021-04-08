@@ -26,8 +26,7 @@ jobs:
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk
-    - uses: johnwbyrd/update-release@v1.0.0
+    - uses: actions/upload-artifact@v2.2.3
       with:
-        token: \$\{\{ secrets.GITHUB_TOKEN \}\}
-        files: build/app/outputs/flutter-apk/app-release.apk
-        prerelease: false
+        name: Builds
+        path: build/app/outputs/flutter-apk/app-release.apk
