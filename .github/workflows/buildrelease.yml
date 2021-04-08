@@ -1,6 +1,6 @@
 # This is a build workflow for Flutter
 
-name: Build
+name: Build Release
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
